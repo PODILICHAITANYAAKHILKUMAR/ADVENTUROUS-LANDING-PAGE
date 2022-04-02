@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+      font-family: 'Open Sans', sans-serif;
+  }
+  body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: url(bg.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+  }
+  body:before {
+      content: "";
+      width: 100%;
+      left: 0;
+      right: 0;
+      position: absolute;
+      height: 100vh;
+      background: url(shape-1.png) no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -111;
+      opacity: 0.9;
+  }
+  section#landing-page {
+      position: fixed;
+      width: 100%;
+      max-width: 90%;
+      margin: auto;
+      left: 0;
+      right: 0;
+      z-index: 999;
+  }
+  .branding {
+      display: grid;
+      grid-template-columns: 10% 90%;
+      align-items: center;
+      padding: 20px 0;
+  }
+  ul.listing {
+      display: flex;
+      align-items: center;
+      list-style: none;
+  }
+  ul.listing li {
+      margin: 0 20px;
+  }
+  ul.listing > li > a {
+      color: #fff;
+      text-decoration: unset;
+      font-size: 20px;
+      line-height: 30px;
+  }
+  .site-url {
+      display: block;
+  }
+  .site-url > img {
+      width: 100%;
+      max-width: 50px;
+  }
+  .content {
+      max-width: 600px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: calc(100vh - 200px);
+  }
+  h1 {
+      font-size: 100px;
+      font-family: 'Permanent Marker', cursive;
+      color: #fff;
+  }
+  p {
+      font-size: 15px;
+      line-height: 25px;
+      color: #fff;
+  }
+  .btn-explore {
+      padding: 20px;
+      display: inline-block;
+      margin-top: 20px;
+      background: url(button.png)no-repeat;
+      background-size: cover;
+      width: 220px;
+      color: #000;
+      font-weight: bold;
+      font-size: 20px;
+      text-decoration: unset;
+  }
+  ul.social-icons.listing {
+      position: fixed;
+      bottom: 20px;
+  }
+  ul.social-icons.listing > li > a {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fff;
+      color: #000;
+      border: 2px solid;
+      border-radius: 100%;
+      font-size: 15px;
+  }
+  ul.social-icons.listing > li {
+      margin: 0 10px;
+  }
